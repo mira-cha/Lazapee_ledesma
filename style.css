@@ -1,0 +1,313 @@
+/* Start General */
+* {
+    font-family: Helvetica,Tahoma,Arial,Sans-serif;
+}
+
+body {
+    color: #424242;
+    margin: 0;
+    background-color: #eff0f5;
+}
+
+h1 {
+    text-align: center;
+}
+
+#content h1, #information h1 {
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 440px) {
+    .showcase {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    
+    #content .display {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+/* End General */
+
+/* Start Navigation */
+nav {
+    font-size: 20px;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    text-align: center;
+    border-bottom: #cacaca;
+}
+
+nav .middle-nav {
+    width: 85%;
+}
+
+nav .right-nav {
+    width: 15%;
+    margin-right: .5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-left: 5px;
+    display: inline-flex;
+}
+
+a {
+    color: #252f7b;
+}
+
+a:hover {
+   color: #f95031;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1275px) {
+    #content h1, #information h1 {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    nav {
+        display: block;
+    }
+
+    nav .middle-nav {
+        width: 100%;
+    }
+
+    nav .right-nav {
+        width: 100%;
+    }
+
+    #content h1, #information h1 {
+        padding-top: 170px;
+    }
+}
+/* End Navigation */
+
+/* Start Category*/
+.display a {
+    color: #424242;
+}
+
+#content {
+    display: block;
+    background-color: #eff0f5;
+}
+
+.showcase {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: block;
+    text-align: center;
+}
+
+#content .display {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.display img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+/* End Category */
+
+/* Start Products */
+#products {
+    display: block;
+    background-color: #eff0f5;
+    padding-top: 30px;
+}
+
+#products p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#products .input {
+    line-height: 15px;
+}
+
+#products .button {
+    background-color: #007bff;
+    color: white;
+    border: 0;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-radius: 3px;
+}
+#products .button:hover{
+    background-color: #0a5a88;
+}
+
+@media screen and (max-width: 1200px) {
+    #products {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    #products {
+        padding-top: 180px;
+    }
+}
+/* End Products */
+
+/* Start Cart */
+#information {
+    display: block;
+    background-color: #eff0f5;
+}
+
+.list {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #ffffff;
+    padding-top: 50px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    display: block;
+    text-align: left;
+}
+table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    padding: fixed;
+}
+
+th, td {
+    padding: 8px;
+}
+
+.cart th {
+    text-align: center;
+}
+
+.cart th, .cart td {
+    border-bottom: 1px solid #eff0f5;
+}
+
+tr:hover {
+    background-color: #ececec;
+}
+
+.cart a {
+    color: #252f7b;
+}
+    
+a:hover {
+    color: #f95031;
+}
+
+.cart .no-underline {
+    border-bottom: 2px solid #ffffff !important;
+}
+
+@media screen and (max-width: 780px) {
+    .hidden1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hidden1 {
+        display: none;
+    }
+
+    .hidden2 {
+        display: none;
+    }
+}
+/* End Cart */
+
+/* Start Account */
+#information p {
+    text-align: right;
+    margin-right: 5%;
+}
+
+#information .button-save{
+    background-color: #28a745;
+    color: white;
+    border: 0;
+    padding-top: 7px;
+    padding-right: 25px;
+    padding-bottom: 7px;
+    padding-left: 25px;
+    border-radius: 3px;
+}
+#information .button-save:hover{
+    color: white;
+    background-color: #00A300;
+}
+#information input[type=password], #information input[type=text] {
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+/* End Account */
+
+/* Start Footer */
+.footer {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    clear: both;
+    position: fixed;
+    height: 200px;
+    margin-top: -200px;
+}
+
+.follow {
+    width: 25%;
+    margin-left: 15%;
+    display: inline-block;
+}
+
+.social {
+    display: inline-block;
+}
+
+.copyright {
+    display: inline-block;
+    margin-left: 15%;
+    vertical-align: 200%;
+}
+/* End Footer */
+
